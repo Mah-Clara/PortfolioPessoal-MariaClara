@@ -1,0 +1,292 @@
+/* limpeza de formatação */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fonte geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ajustando e dando cor ao título do site */
+header h1 {
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 6px;
+    padding: 15px 0;
+    color: #eebbc3;
+    text-align: center;
+    background-color: #121629;
+}
+
+/* formatação e ajustes no nav */
+ nav {
+    width: 100%;
+    background-color: rgba(238, 187, 195, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+nav a {
+    padding: 5px;
+    color: #232946;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 15px transparent;
+    transition: color 0.5s;
+}
+
+/* mouse sobre o link */
+nav a:hover {
+    color: #eebbc3;
+    background-color: #232946;
+    letter-spacing: 3px;
+    border-radius: 15px;
+}
+
+/* background da seção sobre mim */
+#acs {
+    width: 100%;
+    padding-bottom: 45px;
+    background-color: #232946;
+}
+
+/* tamanho das páginas */
+.page {
+    width: 960px;
+    margin:35px auto;
+}
+
+/* card */
+aside {
+    width: 650px;
+    height: 267px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-around;
+    padding: 8px;
+    color: #232946;
+    background: #b8c1ec;
+    border-radius: 24px;
+}
+
+#card h2 {
+    margin: 0 5px;
+    color: #232946;
+    font-size: 18px;
+}
+
+#card img {
+    width: 250px;
+    padding: 0 auto;
+    border-radius: 16px; /* (border-radius/aside) - (padding/aside) = (border-radius/#card img) ---> 24 - 8 = 16 */
+}
+
+/* distância dos span com seu par */
+#content-card {
+    width: 360px;
+}
+
+/* span organizado com seu par e em linhas */
+.text-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+/* distância dos span */
+div span {
+    margin: 3px 0;
+}
+
+/* ajuste fonte span */
+.span1 {
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+/* h2 e p do "Sobre Mim" */
+#about h2 {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: #fffffe;
+}
+
+#about p {
+    color: #b8c1ec;
+    padding: 15px 0;
+}
+
+/* background da seção educação */
+#formstl {
+    width: 100%;
+    padding: 45px 0;
+    background-color: #eebbc3;
+}
+
+/* formatação da educação e outras estilizações */
+#formation {
+  background-color: #fffffe;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(200, 170, 255, 0.2);
+  max-width: 960px;
+}
+
+#formation h2 {
+  color: #232946;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eebbc3;
+  padding-bottom: 5px;
+}
+
+#formation ul {
+  list-style: none;
+  padding: 0;
+}
+
+#formation li {
+  background-color: #fffffe;
+  border-left: 5px solid #eebbc3;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+#formation li:hover {
+  transform: scale(1.02);
+}
+
+#formation strong {
+  color: #232946;
+  font-size: 18px;
+}
+
+#formation em {
+  color: #888888;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+/* background da seção portfólio */
+#portstl {
+    width: 100%;
+    padding: 45px 0;
+    background-color: #232946;
+}
+
+#portfolio h2 {
+    padding-bottom: 50px;
+    color: #fffffe;
+}
+
+/* formatação dos projetos */
+.project {
+  background-color: #fffffe;
+  padding: 20px;
+  border-left: 5px solid #b8c1ec;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project h3 {
+  color: #232946;
+  margin-bottom: 10px;
+}
+
+.project p {
+    color: #232946;
+}
+
+.project ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project a {
+  color: #b8c1ec;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* formatação da seção contato */
+#contstl {
+    width: 100%;
+    padding: 45px 0;
+    background-color: #eebbc3;
+}
+
+#contact h2 {
+  color: #232946;
+  padding-bottom: 50px;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin-bottom: 5px;
+  color: #121629;
+  font-size: 18px;
+}
+
+#contact input,
+#contact textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid #232946;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+#contact button {
+  background-color: #232946;
+  color: #fffffe;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background-color: #121629;
+}
+
+/* footer */
+#footer {
+    width: 100%;
+    padding: 20px;
+    color: #fffffe;
+    font-size: 14px;
+    background-color: #232946;
+    text-align: center;
+}
